@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .product-section {
+      margin: 40px 0;
+    }
+    .product-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-card {
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-card .info {
+      padding: 15px;
+    }
+    .product-card .info h3 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #555;
+    }
+    .product-card .info p {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #777;
+    }
+    .product-card .info .price {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+    .product-card .info .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      color: #fff;
+      background: #007BFF;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .product-card .info .btn:hover {
+      background: #0056b3;
+    }
+    @media (max-width: 768px) {
+      .product-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Product Showcase</h1>
+
+    <!-- Male Products Section -->
+    <div class="product-section" id="male-products">
+      <h2>Men's Collection</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="productiange (1).png" alt="Men Product 1">
+          <div class="info">
+            <h3>Men's T-Shirt</h3>
+            <p>Comfortable and stylish cotton T-shirt.</p>
+            <p class="price">BDT 550</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="productiange (6).png" alt="Men Product 2">
+          <div class="info">
+            <h3>Men's Hoodie</h3>
+            <p>Warm and cozy hoodie for all seasons.</p>
+            <p class="price">BDT 800</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="productiange (9).png" alt="Men Product 3">
+          <div class="info">
+            <h3>Men's Premium Jacket</h3>
+            <p>Durable and comfortable sneakers.</p>
+            <p class="price">BDT 1500</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Female Products Section -->
+    <div class="product-section" id="female-products">
+      <h2>Women's Collection</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="threepices.jpg" alt="Women Product 1">
+          <div class="info">
+            <h3>Women's Dress</h3>
+            <p>Elegant and stylish evening dress.</p>
+            <p class="price">BDT 1500</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="productiange (2).png" alt="Women Product 2">
+          <div class="info">
+            <h3>Women's T-Shirt</h3>
+            <p>Trendy and spacious T-Shirt
+            <p class="price">BDT 550</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="productiange (8).png" alt="Women Product 3">
+          <div class="info">
+            <h3>Women's Hoodie</h3>
+            <p>Comfortable and stylish Hoodie.</p>
+            <p class="price">BDT 1000</p>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
